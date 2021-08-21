@@ -4,7 +4,7 @@ def resuldo_f1(primeiro, segundo, terceiro):
     print(f'2) {segundo}')
     print(f'3) {terceiro}')
 
-if __name__ == '__main__':
+if __name__ == '__main__':# se o programa esta sendo executado por si só
     
     poduim = {'primeiro':'Ana',
                 'segundo':'Pedro', 'terceiro':'Andre'}
