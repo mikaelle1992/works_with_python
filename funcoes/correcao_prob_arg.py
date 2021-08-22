@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 def fibonacci(seguencia=None):
     #usando o None , toda vez que o fabonacci for chamado ira resertar os valores do parametro
     seguencia = seguencia or [0, 1]
