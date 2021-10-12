@@ -1,6 +1,7 @@
-import csv
-with open('pessoas.csv') as entrada:
-        for dado in csv.reader(entrada):
-            print('Nome:{} Idade:{}'.format(*dado))
+import json
+
+with open('postos.json') as entrada:
+    for dado in json.reader(entrada):
+        print('NomeNovao:{} Idade:{}'.format(*dado))
     
 

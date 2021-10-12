@@ -3,7 +3,6 @@ def calc_preco_final(preco_bruto, calc_importo, *params):
     return preco_bruto + preco_bruto * calc_importo(*params)
 
 
-
 def importo_x(importado):
     return 0.22 if importado else 0.13
 

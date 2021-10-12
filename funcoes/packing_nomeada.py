@@ -4,6 +4,7 @@ def resuldo_f1(**podium):
     for posicao, piloto in podium.items():
         print(f'{posicao} -> {piloto}')
 
+
 if __name__ == '__main__':
     resuldo_f1(primeiro='Ana',
-                segundo='Pedro', terceiro='Andre')
+               segundo='Pedro', terceiro='Andre')

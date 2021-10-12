@@ -1,6 +1,6 @@
 
 with open('pessoas.csv') as arquivo:
-    with open('pessoas.txt','w') as saida:
+    with open('pessoas.txt', 'w') as saida:
         for dado in arquivo:
             pessoa = dado.strip().split(',')
             print('Nome:{} Idade:{}'.format(*pessoa), file=saida)

@@ -2,7 +2,7 @@
 
 def notasDaTurma(nota):
     nota = float(nota)
-    if nota >10:
+    if nota > 10:
         return 'nota invalida'
     elif nota >= 9.1:
         return'A'

@@ -1,7 +1,0 @@
-Nome:Maria Idade:20
-Nome:Joao Idade:50
-Nome:Ana Idade:27
-Nome:Pedro Idade:37
-Nome:Andre Idade:19
-Nome:Carlos Idade:14
-Nome:Bia Idade:43

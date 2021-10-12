@@ -1,11 +1,12 @@
 def get_tipo_dias(dia):
     dias = {
-        (1,7):'Fim de semana',
+        (1, 7): 'Fim de semana',
         tuple(range(2, 7)): 'Dias de Semana',
     }
     dia_escolhido = (tipo for numeros, tipo in dias.items() if dia in numeros)
     return next(dia_escolhido, '**dia inválido**')
 
+
 if __name__ == '__main__':
-    for dia in range (1, 9):
+    for dia in range(1, 9):
         print(f'{dia} : {get_tipo_dias(dia)}')
