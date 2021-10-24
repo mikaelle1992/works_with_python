@@ -12,3 +12,4 @@ totais = tuple(
 )
 
 print('Preços totais:', list(totais))
+print('total geral:', sum(totais) )
