@@ -20,7 +20,7 @@ try:
         try:
             cursor = conexao.cursor()
             cursor.execute(tabela_email)
-            cursor.execute(tabela_contatos)
+            # cursor.execute(tabela_contatos)
         except ProgrammingError as e :
             print("Erro", e.msg)
 except ProgrammingError as e :
