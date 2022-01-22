@@ -15,12 +15,13 @@ tabela_email = """
         )
 """
 
-        
-with nova_conexao() as conexao:
-    try:
-        cursor = conexao.cursor()
-        # cursor.execute(tabela_email)
-        cursor.execute(tabela_contatos)
-    except ProgrammingError as e :
-        print("Erro", e.msg)
-        
+try:        
+    with nova_conexao() as conexao:
+        try:
+            cursor = conexao.cursor()
+            cursor.execute(tabela_email)
+            cursor.execute(tabela_contatos)
+        except ProgrammingError as e :
+            print("Erro", e.msg)
+except ProgrammingError as e :
+    print("Erro Conexao", e.msg)        
