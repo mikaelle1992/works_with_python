@@ -14,7 +14,7 @@ try:
     with nova_conexao() as conexao:
         try:
             cursor = conexao.cursor()
-            cursor.execute(sql, args)
+            cursor.executemany(sql, args)
             conexao.commit()
            
         except ProgrammingError as e :
